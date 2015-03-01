@@ -1,0 +1,40 @@
+[
+ {
+  "name": "All available",
+  "ingredients": [
+   { "item":"bread", "amount":"2", "unit":"slices"},
+   { "item":"cheese", "amount":"2", "unit":"slices"},
+   { "item":"peanut butter", "amount":"250", "unit":"grams"},
+   { "item":"mixed salad", "amount":"150", "unit":"grams"}
+  ]
+ }
+ ,
+ {
+  "name": "Some not enough",
+  "ingredients": [
+   { "item":"bread", "amount":"2", "unit":"slices"},
+   { "item":"cheese", "amount":"2", "unit":"slices"},
+   { "item":"peanut butter", "amount":"350", "unit":"grams"},
+   { "item":"mixed salad", "amount":"150", "unit":"grams"}
+  ]
+ }
+ ,
+ {
+  "name": "Some expired",
+  "ingredients": [
+   { "item":"bread", "amount":"2", "unit":"slices"},
+   { "item":"cheese", "amount":"2", "unit":"slices"},
+   { "item":"butter", "amount":"250", "unit":"grams"},
+   { "item":"mixed salad", "amount":"150", "unit":"grams"}
+  ]
+ },
+ {
+  "name": "Some expired and some not enough",
+  "ingredients": [
+   { "item":"bread", "amount":"2", "unit":"slices"},
+   { "item":"cheese", "amount":"12", "unit":"slices"},
+   { "item":"butter", "amount":"250", "unit":"grams"},
+   { "item":"mixed salad", "amount":"150", "unit":"grams"}
+  ]
+ }
+]
