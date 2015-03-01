@@ -60,4 +60,14 @@ public class FridgeService {
 	    }
     	return Collections.min(selfLifeList);
 	}
+
+	public List<Ingredient> getStock() {
+		return stock;
+	}
+
+	public void setStock(List<Ingredient> stock) {
+		this.stock = stock;
+	}
+	
+	
 }

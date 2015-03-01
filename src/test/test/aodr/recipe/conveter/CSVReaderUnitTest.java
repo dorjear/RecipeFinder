@@ -19,7 +19,7 @@ import ador.recipe.util.RecipeFinderConstant;
 public class CSVReaderUnitTest extends TestCase {
 
 	public void testProcessorSuccess() throws ParseException{
-		String fileName = "Fridge.csv";
+		String fileName = "FridgeForUnitTest.csv";
 		CSVReader cvsReader = new CSVReader();
 
 	    CellProcessor[] ingredientProcessors = IngredientUtil.getCellProcessorOfIngredient();
@@ -33,11 +33,11 @@ public class CSVReaderUnitTest extends TestCase {
 		}
 
 		List<Ingredient> ingredientListExpected = new ArrayList<Ingredient>();
-		ingredientListExpected.add(new Ingredient("bread", 10.0, Unit.slices, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("25/12/2014")));
-		ingredientListExpected.add(new Ingredient("cheese", 10.0, Unit.slices, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("25/12/2014")));
+		ingredientListExpected.add(new Ingredient("bread", 10.0, Unit.slices, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("25/12/2015")));
+		ingredientListExpected.add(new Ingredient("cheese", 10.0, Unit.slices, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("25/12/2015")));
 		ingredientListExpected.add(new Ingredient("butter", 250.0, Unit.grams, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("25/12/2014")));
-		ingredientListExpected.add(new Ingredient("peanut butter", 250.0, Unit.grams, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("02/12/2014")));
-		ingredientListExpected.add(new Ingredient("mixed salad", 150.0, Unit.grams, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("26/12/2013")));
+		ingredientListExpected.add(new Ingredient("peanut butter", 250.0, Unit.grams, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("31/3/2015")));
+		ingredientListExpected.add(new Ingredient("mixed salad", 150.0, Unit.grams, new SimpleDateFormat(RecipeFinderConstant.AU_DATE_FORMAT).parse("26/12/2015")));
 
 		assertTrue(Comparator.compareArray(ingredientList.toArray(), ingredientListExpected.toArray()));
 	}
