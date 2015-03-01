@@ -33,7 +33,7 @@ public class RecipeFinder {
 			long recipeSelfLife = fridgeService.shortestSelfLifeOfIngredientList(ingredientList);
 			if(recipeSelfLife!=-1 && (recipeSelfLife<targetRecipeSelfLife || targetRecipeSelfLife==-1)){
 				targetRecipeSelfLife = recipeSelfLife;
-				outputMsg = "We'd better to code " + recipe.getName();
+				outputMsg = recipe.getName();
 			}
 		}
 		System.out.println(outputMsg);
