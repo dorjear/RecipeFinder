@@ -15,8 +15,14 @@ import ador.recipe.service.FridgeService;
 public class RecipeFinder {
 
 	public static void main(String[] args) {
+		
 		String fridgeFileName = "Fridge.csv";
 		String recipeFileName = "Recipe.txt";
+
+		if(args.length>=2 && args[0]!=null && args[1]!=null){
+			fridgeFileName = args[0];
+			recipeFileName = args[1];
+		}
 		
 		FridgeService fridgeService = new FridgeService();
 		fridgeService.loadIngredientByCSV(fridgeFileName);

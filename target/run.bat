@@ -1,1 +1,1 @@
-java -classpath RecipeFinder.jar ador.recipe.main.RecipeFinder
+java -classpath RecipeFinder.jar ador.recipe.main.RecipeFinder Fridge.csv Recipe.txt
